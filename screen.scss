@@ -1,0 +1,189 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+ @import "compass/reset";
+ @import "compass/css3";
+
+$spacing: 200px ;
+body {
+	font-family: 'droid sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+ #container {
+ 	background: none repeat scroll 0 0 #F6F6F6;
+ 	display: block;
+ 	height: 100%;
+ 	margin: 50px auto;
+ 	overflow: hidden;
+ 	width: 100%;
+ 	#flip {
+ 		@include perspective(600px);
+ 		//@include transform(rotateX(-45deg) rotateY(10deg));
+ 		-moz-perspective: 600px;
+ 		background: none repeat scroll 0 0 rgba(0, 0, 0, 0.698);
+ 		display: block;
+ 		height: 100%;
+ 		width: 100%;
+ 		position: absolute;
+ 		top: 10%;
+ 		.child {
+ 			border: 1px solid #333333;
+ 			//@include border-radius(12px);
+ 			@include box-shadow(0 0 8px 0 #555555);
+ 			display: block;
+		    float: left;
+		    height: 200px;
+		    left: 10%;
+		    margin: 80px 0 0;
+		    position: absolute;
+		    top: 40%;
+		    width: 200px;
+ 			&.c1 {
+ 				@include transform(rotateX(-4deg) 
+ 				                   rotateY(-20deg) 
+ 				                   scale(1.6, 1.1));
+ 				background-color: rgba(255, 250, 205, 0.698);
+ 				z-index: 8;
+ 			}                                
+ 			&.c2 { 
+ 				@include transform(rotateX(-6deg) 
+ 				                   rotateY(-20deg) 
+ 				                   rotateZ(0deg) 
+ 				                   translateZ(-153px) 
+ 				                   translateY(-51px) 
+ 				                   translateX(129px) 
+ 				                   scale(1.4,1.1));
+ 				background-color: rgba(173, 216, 230, 0.698);
+ 				z-index: 7;
+ 			}
+ 			&.c3 { 
+ 				@include transform(rotateX(-6deg) 
+ 				                   rotateY(-20deg) 
+ 				                   rotateZ(1deg) 
+ 				                   translateZ(-238px) 
+ 				                   translateY(-107px) 
+ 				                   translateX(243px) 
+ 				                   scale(1.2,1.0) );
+ 				background-color: rgba(240, 128, 128, 0.698);
+ 				z-index: 6;
+ 			}
+ 			&.c4 { 
+ 				@include transform(rotateX(-7deg) 
+ 				                   rotateY(-20deg) 
+ 				                   rotateZ(1deg) 
+ 				                   translateZ(-359px) 
+ 				                   translateY(-147px) 
+ 				                   translateX(302px) 
+ 				                   scale(1.1, 1.0) );
+ 				background-color: rgba(127,255,0, 0.698);
+ 				z-index: 5;
+ 			} 
+ 			&.c5 {
+ 				@include transform(rotateX(-7deg) 
+ 				                   rotateY(-20deg) 
+ 				                   rotateZ(1deg) 
+ 				                   translateZ(-484px) 
+ 				                   translateY(-172px) 
+ 				                   translateX(326px) 
+ 				                   scale(1.1, 1.0) );
+ 				background-color: rgba(255,20,147, 0.698);
+ 				z-index: 4;
+ 			}                                
+ 			&.c6 { 
+ 				@include transform(rotateX(-7deg) 
+ 				                   rotateY(-20deg) 
+ 				                   rotateZ(0deg) 
+ 				                   translateZ(-599px) 
+ 				                   translateY(-192px) 
+ 				                   translateX(349px) 
+ 				                   scale(1.1, 1.0) );
+ 				background-color: rgba(255,165,0, 0.698);
+ 				z-index: 3;
+ 			}
+ 			&.c7 { 
+ 				@include transform(rotateX(-7deg) 
+ 				                   rotateY(-20deg) 
+ 				                   rotateZ(0deg) 
+ 				                   translateZ(-673px) 
+ 				                   translateY(-220px) 
+ 				                   translateX(341px) 
+ 				                   scale(1.1, 1.0) );
+ 				background-color: rgba(255, 255, 255, 0.1);
+ 				z-index: 2;
+ 			}
+ 			&.c8 { 
+ 				@include transform(rotateX(-7deg) 
+ 				                   rotateY(-20deg) 
+ 				                   rotateZ(0deg) 
+ 				                   translateZ(-673px) 
+ 				                   translateY(-240px) 
+ 				                   translateX(322px) 
+ 				                   scale(1.1, 1.0) );
+ 				background-color: rgba(255, 255, 255, 0.08);
+ 				z-index: 2;
+ 			} 
+ 			&.c9 { 
+ 				@include transform(rotateX(-7deg) 
+ 				                   rotateY(-20deg) 
+ 				                   rotateZ(0deg) 
+ 				                   translateZ(-673px) 
+ 				                   translateY(-260px) 
+ 				                   translateX(311px) 
+ 				                   scale(1.1, 1.0) );
+ 				background-color: rgba(255, 255, 255, 0.06);
+ 				z-index: 2;
+ 			} 
+ 			&.c10 { 
+ 				@include transform(rotateX(-7deg) 
+ 				                   rotateY(-20deg) 
+ 				                   rotateZ(0deg) 
+ 				                   translateZ(-673px) 
+ 				                   translateY(-280px) 
+ 				                   translateX(289px) 
+ 				                   scale(1.1, 1.0) );
+ 				background-color: rgba(255, 255, 255, 0.04);
+ 				z-index: 2;
+ 			}      
+ 			&.none {
+		 		display: none;	
+		 	}      
+		 	&.c5,&.c6,&.c7,&.c8,&.c9,&.c10 {
+		 		.details {
+			 		display: none;	
+		 		}
+		 	} 
+		 	&.c3 {
+		 		.details {
+			 		opacity:0.6;
+		 		}
+		 	} 
+		 	&.c4 {
+		 		.details {
+			 		opacity:0.4;
+		 		}
+		 	} 
+		 	.details {
+		 		position: absolute;
+				top: -70px;
+				height: 60px;
+				border-left: 1px solid #777;
+				padding: 0 0 0 15px;
+		 		h3 {
+		 			font-size:18px;
+		 			font-weight:bold;
+		 			color: #fff;
+		 			margin:0 0 10px 0;
+		 		}
+		 		h4 {
+		 			font-size:18px;
+		 			font-weight:normal;
+		 			color: #ccc;
+		 		}
+		 	}                    
+ 		}
+ 	}
+ }
+
+
+

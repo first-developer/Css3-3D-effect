@@ -1,0 +1,247 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 20, ../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
+  line-height: 1;
+}
+
+/* line 22, ../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 24, ../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 26, ../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 28, ../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 101, ../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 30, ../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 114, ../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 10, ../sass/screen.scss */
+body {
+  font-family: 'droid sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* line 13, ../sass/screen.scss */
+#container {
+  background: none repeat scroll 0 0 #F6F6F6;
+  display: block;
+  height: 100%;
+  margin: 50px auto;
+  overflow: hidden;
+  width: 100%;
+}
+/* line 20, ../sass/screen.scss */
+#container #flip {
+  -webkit-perspective: 600px;
+  perspective: 600px;
+  -moz-perspective: 600px;
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0.698);
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 10%;
+}
+/* line 30, ../sass/screen.scss */
+#container #flip .child {
+  border: 1px solid #333333;
+  -webkit-box-shadow: 0 0 8px 0 #555555;
+  -moz-box-shadow: 0 0 8px 0 #555555;
+  box-shadow: 0 0 8px 0 #555555;
+  display: block;
+  float: left;
+  height: 200px;
+  left: 10%;
+  margin: 80px 0 0;
+  position: absolute;
+  top: 40%;
+  width: 200px;
+}
+/* line 42, ../sass/screen.scss */
+#container #flip .child.c1 {
+  -webkit-transform: rotateX(-4deg) rotateY(-20deg) scale(1.6, 1.1);
+  -moz-transform: rotateX(-4deg) rotateY(-20deg) scale(1.6, 1.1);
+  -ms-transform: rotateX(-4deg) rotateY(-20deg) scale(1.6, 1.1);
+  -o-transform: rotateX(-4deg) rotateY(-20deg) scale(1.6, 1.1);
+  transform: rotateX(-4deg) rotateY(-20deg) scale(1.6, 1.1);
+  background-color: rgba(255, 250, 205, 0.698);
+  z-index: 8;
+}
+/* line 49, ../sass/screen.scss */
+#container #flip .child.c2 {
+  -webkit-transform: rotateX(-6deg) rotateY(-20deg) rotateZ(0deg) translateZ(-153px) translateY(-51px) translateX(129px) scale(1.4, 1.1);
+  -moz-transform: rotateX(-6deg) rotateY(-20deg) rotateZ(0deg) translateZ(-153px) translateY(-51px) translateX(129px) scale(1.4, 1.1);
+  -ms-transform: rotateX(-6deg) rotateY(-20deg) rotateZ(0deg) translateZ(-153px) translateY(-51px) translateX(129px) scale(1.4, 1.1);
+  -o-transform: rotateX(-6deg) rotateY(-20deg) rotateZ(0deg) translateZ(-153px) translateY(-51px) translateX(129px) scale(1.4, 1.1);
+  transform: rotateX(-6deg) rotateY(-20deg) rotateZ(0deg) translateZ(-153px) translateY(-51px) translateX(129px) scale(1.4, 1.1);
+  background-color: rgba(173, 216, 230, 0.698);
+  z-index: 7;
+}
+/* line 60, ../sass/screen.scss */
+#container #flip .child.c3 {
+  -webkit-transform: rotateX(-6deg) rotateY(-20deg) rotateZ(1deg) translateZ(-238px) translateY(-107px) translateX(243px) scale(1.2, 1);
+  -moz-transform: rotateX(-6deg) rotateY(-20deg) rotateZ(1deg) translateZ(-238px) translateY(-107px) translateX(243px) scale(1.2, 1);
+  -ms-transform: rotateX(-6deg) rotateY(-20deg) rotateZ(1deg) translateZ(-238px) translateY(-107px) translateX(243px) scale(1.2, 1);
+  -o-transform: rotateX(-6deg) rotateY(-20deg) rotateZ(1deg) translateZ(-238px) translateY(-107px) translateX(243px) scale(1.2, 1);
+  transform: rotateX(-6deg) rotateY(-20deg) rotateZ(1deg) translateZ(-238px) translateY(-107px) translateX(243px) scale(1.2, 1);
+  background-color: rgba(240, 128, 128, 0.698);
+  z-index: 6;
+}
+/* line 71, ../sass/screen.scss */
+#container #flip .child.c4 {
+  -webkit-transform: rotateX(-7deg) rotateY(-20deg) rotateZ(1deg) translateZ(-359px) translateY(-147px) translateX(302px) scale(1.1, 1);
+  -moz-transform: rotateX(-7deg) rotateY(-20deg) rotateZ(1deg) translateZ(-359px) translateY(-147px) translateX(302px) scale(1.1, 1);
+  -ms-transform: rotateX(-7deg) rotateY(-20deg) rotateZ(1deg) translateZ(-359px) translateY(-147px) translateX(302px) scale(1.1, 1);
+  -o-transform: rotateX(-7deg) rotateY(-20deg) rotateZ(1deg) translateZ(-359px) translateY(-147px) translateX(302px) scale(1.1, 1);
+  transform: rotateX(-7deg) rotateY(-20deg) rotateZ(1deg) translateZ(-359px) translateY(-147px) translateX(302px) scale(1.1, 1);
+  background-color: rgba(127, 255, 0, 0.698);
+  z-index: 5;
+}
+/* line 82, ../sass/screen.scss */
+#container #flip .child.c5 {
+  -webkit-transform: rotateX(-7deg) rotateY(-20deg) rotateZ(1deg) translateZ(-484px) translateY(-172px) translateX(326px) scale(1.1, 1);
+  -moz-transform: rotateX(-7deg) rotateY(-20deg) rotateZ(1deg) translateZ(-484px) translateY(-172px) translateX(326px) scale(1.1, 1);
+  -ms-transform: rotateX(-7deg) rotateY(-20deg) rotateZ(1deg) translateZ(-484px) translateY(-172px) translateX(326px) scale(1.1, 1);
+  -o-transform: rotateX(-7deg) rotateY(-20deg) rotateZ(1deg) translateZ(-484px) translateY(-172px) translateX(326px) scale(1.1, 1);
+  transform: rotateX(-7deg) rotateY(-20deg) rotateZ(1deg) translateZ(-484px) translateY(-172px) translateX(326px) scale(1.1, 1);
+  background-color: rgba(255, 20, 147, 0.698);
+  z-index: 4;
+}
+/* line 93, ../sass/screen.scss */
+#container #flip .child.c6 {
+  -webkit-transform: rotateX(-7deg) rotateY(-20deg) rotateZ(0deg) translateZ(-599px) translateY(-192px) translateX(349px) scale(1.1, 1);
+  -moz-transform: rotateX(-7deg) rotateY(-20deg) rotateZ(0deg) translateZ(-599px) translateY(-192px) translateX(349px) scale(1.1, 1);
+  -ms-transform: rotateX(-7deg) rotateY(-20deg) rotateZ(0deg) translateZ(-599px) translateY(-192px) translateX(349px) scale(1.1, 1);
+  -o-transform: rotateX(-7deg) rotateY(-20deg) rotateZ(0deg) translateZ(-599px) translateY(-192px) translateX(349px) scale(1.1, 1);
+  transform: rotateX(-7deg) rotateY(-20deg) rotateZ(0deg) translateZ(-599px) translateY(-192px) translateX(349px) scale(1.1, 1);
+  background-color: rgba(255, 165, 0, 0.698);
+  z-index: 3;
+}
+/* line 104, ../sass/screen.scss */
+#container #flip .child.c7 {
+  -webkit-transform: rotateX(-7deg) rotateY(-20deg) rotateZ(0deg) translateZ(-673px) translateY(-220px) translateX(341px) scale(1.1, 1);
+  -moz-transform: rotateX(-7deg) rotateY(-20deg) rotateZ(0deg) translateZ(-673px) translateY(-220px) translateX(341px) scale(1.1, 1);
+  -ms-transform: rotateX(-7deg) rotateY(-20deg) rotateZ(0deg) translateZ(-673px) translateY(-220px) translateX(341px) scale(1.1, 1);
+  -o-transform: rotateX(-7deg) rotateY(-20deg) rotateZ(0deg) translateZ(-673px) translateY(-220px) translateX(341px) scale(1.1, 1);
+  transform: rotateX(-7deg) rotateY(-20deg) rotateZ(0deg) translateZ(-673px) translateY(-220px) translateX(341px) scale(1.1, 1);
+  background-color: rgba(255, 255, 255, 0.1);
+  z-index: 2;
+}
+/* line 115, ../sass/screen.scss */
+#container #flip .child.c8 {
+  -webkit-transform: rotateX(-7deg) rotateY(-20deg) rotateZ(0deg) translateZ(-673px) translateY(-240px) translateX(322px) scale(1.1, 1);
+  -moz-transform: rotateX(-7deg) rotateY(-20deg) rotateZ(0deg) translateZ(-673px) translateY(-240px) translateX(322px) scale(1.1, 1);
+  -ms-transform: rotateX(-7deg) rotateY(-20deg) rotateZ(0deg) translateZ(-673px) translateY(-240px) translateX(322px) scale(1.1, 1);
+  -o-transform: rotateX(-7deg) rotateY(-20deg) rotateZ(0deg) translateZ(-673px) translateY(-240px) translateX(322px) scale(1.1, 1);
+  transform: rotateX(-7deg) rotateY(-20deg) rotateZ(0deg) translateZ(-673px) translateY(-240px) translateX(322px) scale(1.1, 1);
+  background-color: rgba(255, 255, 255, 0.08);
+  z-index: 2;
+}
+/* line 126, ../sass/screen.scss */
+#container #flip .child.c9 {
+  -webkit-transform: rotateX(-7deg) rotateY(-20deg) rotateZ(0deg) translateZ(-673px) translateY(-260px) translateX(311px) scale(1.1, 1);
+  -moz-transform: rotateX(-7deg) rotateY(-20deg) rotateZ(0deg) translateZ(-673px) translateY(-260px) translateX(311px) scale(1.1, 1);
+  -ms-transform: rotateX(-7deg) rotateY(-20deg) rotateZ(0deg) translateZ(-673px) translateY(-260px) translateX(311px) scale(1.1, 1);
+  -o-transform: rotateX(-7deg) rotateY(-20deg) rotateZ(0deg) translateZ(-673px) translateY(-260px) translateX(311px) scale(1.1, 1);
+  transform: rotateX(-7deg) rotateY(-20deg) rotateZ(0deg) translateZ(-673px) translateY(-260px) translateX(311px) scale(1.1, 1);
+  background-color: rgba(255, 255, 255, 0.06);
+  z-index: 2;
+}
+/* line 137, ../sass/screen.scss */
+#container #flip .child.c10 {
+  -webkit-transform: rotateX(-7deg) rotateY(-20deg) rotateZ(0deg) translateZ(-673px) translateY(-280px) translateX(289px) scale(1.1, 1);
+  -moz-transform: rotateX(-7deg) rotateY(-20deg) rotateZ(0deg) translateZ(-673px) translateY(-280px) translateX(289px) scale(1.1, 1);
+  -ms-transform: rotateX(-7deg) rotateY(-20deg) rotateZ(0deg) translateZ(-673px) translateY(-280px) translateX(289px) scale(1.1, 1);
+  -o-transform: rotateX(-7deg) rotateY(-20deg) rotateZ(0deg) translateZ(-673px) translateY(-280px) translateX(289px) scale(1.1, 1);
+  transform: rotateX(-7deg) rotateY(-20deg) rotateZ(0deg) translateZ(-673px) translateY(-280px) translateX(289px) scale(1.1, 1);
+  background-color: rgba(255, 255, 255, 0.04);
+  z-index: 2;
+}
+/* line 148, ../sass/screen.scss */
+#container #flip .child.none {
+  display: none;
+}
+/* line 152, ../sass/screen.scss */
+#container #flip .child.c5 .details, #container #flip .child.c6 .details, #container #flip .child.c7 .details, #container #flip .child.c8 .details, #container #flip .child.c9 .details, #container #flip .child.c10 .details {
+  display: none;
+}
+/* line 157, ../sass/screen.scss */
+#container #flip .child.c3 .details {
+  opacity: 0.6;
+}
+/* line 162, ../sass/screen.scss */
+#container #flip .child.c4 .details {
+  opacity: 0.4;
+}
+/* line 166, ../sass/screen.scss */
+#container #flip .child .details {
+  position: absolute;
+  top: -70px;
+  height: 60px;
+  border-left: 1px solid #777;
+  padding: 0 0 0 15px;
+}
+/* line 172, ../sass/screen.scss */
+#container #flip .child .details h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  margin: 0 0 10px 0;
+}
+/* line 178, ../sass/screen.scss */
+#container #flip .child .details h4 {
+  font-size: 18px;
+  font-weight: normal;
+  color: #ccc;
+}
